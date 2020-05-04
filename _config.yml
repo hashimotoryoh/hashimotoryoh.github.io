@@ -8,8 +8,8 @@ description: 橋本 龍のホームページ
 user:
   fullname: 
     ja: 橋本 龍
-    ja-hira: はしもと りょう
-    ja-kata: ハシモト リョウ
+    ja_hira: はしもと りょう
+    ja_kata: ハシモト リョウ
     en: Ryo Hashimoto
   occupation: System Engineer
   email: hashimotoryoh@gmail.com
