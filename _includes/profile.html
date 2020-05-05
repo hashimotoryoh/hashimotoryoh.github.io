@@ -1,12 +1,11 @@
-<div id="profile" class="section-content">
+<div id="profile" class="pt-5">
   <div class="container">
     <div class="row">
 
       <div class="col-lg-3 text-center">
-  <!-- <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" > -->
-        <img src="{{ '/assets/profile.jpg' }}" width="250" height="250" />
+        <img src="{{ site.github.owner_gravatar_url }}" width="250" height="250" class="border rounded" />
         <h2><b><ruby><rb>{{ site.user.fullname.ja }}</rb><rt>{{ site.user.fullname.ja_kata }}</rt></ruby></b></h2>
-        <p>{{ site.user.fullname.en }}</p>
+        <h3 class="pt-0 text-muted">{{ site.user.fullname.en }}</h3>
       </div>
 
       <div class="col-lg-9">
@@ -14,18 +13,30 @@
           <div class="row">
             <div class="col">
               <p>フリーのシステムエンジニアです。</p>
-              <p>最近はiOSを中心に開発を行っています。</p>
+              <p>
+                最近はiOSを中心に開発を行っています。ゲーム業界での経験が長く、ラフなプロジェクトの雰囲気が好きだったりします。
+                ビューで提示された要求仕様に対してシステム的な要件を割り出し、データベースやAPI、クラス構造に落とし込んでいくのが得意です。
+                他にも自動車業界や医療系、不動産系などのサービス開発経験もあります。
+              </p>
+              <p>
+                個人では、地元である北海道苫小牧市を運行するバスの時刻表アプリケーションや、全国のビリヤード場の営業/イベント情報サービスなど、趣味に寄るところの開発が多いです。
+                個人経営の店舗のホームページ制作なんかもたまにやってます。
+              </p>
+              <p>
+                年に何回か長期休暇で海外旅行に行くのが好きです！
+              </p>
+              <p class="text-right">2020年5月</p>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6 text-center">
               <h3><i class="icon fa fa-envelope"></i> Email</h3>
-              <p><b><a href="mailto:{{ site.user.email }}">{{ site.user.email }}</a></b></p>
+              <p class="h3"><b><a href="mailto:{{ site.user.email }}" class="text-warning">{{ site.user.email }}</a></b></p>
               <p class="text-muted">通常は一時間以内に返信します。</p>
             </div>
             <div class="col-sm-6 text-center">
               <h3><i class="icon fa fa-phone"></i> Tel</h3>
-              <p><b><a href="tel:{{ site.user.tel }}">{{ site.user.tel }}</a></b></p>
+              <p class="h3"><b><a href="tel:{{ site.user.tel }}" class="text-warning">{{ site.user.tel }}</a></b></p>
               <p class="text-muted">発信者番号を通知しておかけください。</p>
             </div>
           </div>
