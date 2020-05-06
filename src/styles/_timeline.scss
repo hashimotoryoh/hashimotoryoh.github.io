@@ -1,6 +1,13 @@
 ul.timeline {
+  &:before {
+    left: 9px;
+  }
+
   li {
+    padding-left: 0;
+    
     &:before {
+      left: 0;
       border-color: #ffc107;
     }
   }

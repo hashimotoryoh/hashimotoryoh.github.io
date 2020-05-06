@@ -4,12 +4,12 @@
 
       <div class="col-lg-3 text-center">
         <img src="{{ site.github.owner_gravatar_url }}" width="250" height="250" class="border rounded" />
-        <h2><b><ruby><rb>{{ site.user.fullname.ja }}</rb><rt>{{ site.user.fullname.ja_kata }}</rt></ruby></b></h2>
-        <h3 class="pt-0 text-muted">{{ site.user.fullname.en }}</h3>
+        <h2 class="fullname fullname-ja"><ruby><rb>{{ site.user.fullname.ja }}</rb><rt>{{ site.user.fullname.ja_kata }}</rt></ruby></h2>
+        <h3 class="fullname fullname-en pt-0 text-muted">{{ site.user.fullname.en }}</h3>
       </div>
 
       <div class="col-lg-9">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col">
               <p>フリーのシステムエンジニアです。</p>
@@ -31,12 +31,12 @@
           <div class="row">
             <div class="col-sm-6 text-center">
               <h3><i class="icon fa fa-envelope"></i> Email</h3>
-              <p class="h4"><b><a href="mailto:{{ site.user.email }}" class="text-warning">{{ site.user.email }}</a></b></p>
+              <p class="h3"><a href="mailto:{{ site.user.email }}" class="text-warning">{{ site.user.email }}</a></p>
               <p class="text-muted">通常は一時間以内に返信します。</p>
             </div>
             <div class="col-sm-6 text-center">
               <h3><i class="icon fa fa-phone"></i> Tel</h3>
-              <p class="h4"><b><a href="tel:{{ site.user.tel }}" class="text-warning">{{ site.user.tel }}</a></b></p>
+              <p class="h3"><a href="tel:{{ site.user.tel }}" class="text-warning">{{ site.user.tel }}</a></p>
               <p class="text-muted">発信者番号を通知しておかけください。</p>
             </div>
           </div>
