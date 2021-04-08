@@ -6,23 +6,23 @@ description: 橋本 龍のホームページ
 
 # User settings
 user:
-  fullname: 
-    ja: 橋本 龍
-    ja_hira: はしもと りょう
-    ja_kata: ハシモト リョウ
+    fullname: 
+        ja: 橋本 龍
+        ja_hira: はしもと りょう
+        ja_kata: ハシモト リョウ
     en: Ryo Hashimoto
-  occupation: System Engineer
-  email: hashimotoryoh@gmail.com
-  tel: 090-6870-0027
-  twitter_username: hashimotoryoh
-  facebook_username: ryoh.hashimoto
-  instagram_username: hashimotoryoh
-  github_username: hashimotoryoh
-  qiita_username: hashimotoryoh
-  note_username: hashimotoryoh
+    occupation: System Engineer
+    email: hashimotoryoh@gmail.com
+    tel: 090-6870-0027
+    twitter_username: hashimotoryoh
+    facebook_username: ryoh.hashimoto
+    instagram_username: hashimotoryoh
+    github_username: hashimotoryoh
+    qiita_username: hashimotoryoh
+    note_username: hashimotoryoh
 
 # Google-analytics
 google-analytics:
-  id: ""
+    id: ""
 
 exclude: ['package.json', 'src' , 'node_modules']

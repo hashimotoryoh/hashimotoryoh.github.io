@@ -1,27 +1,34 @@
 <div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">{{ site.user.fullname.en }}</span>
-        <span class="site-description">{{ site.user.occupation }}</span>
-      </h1>
-      <div class="header-icons">
-        {% if site.user.email %}
-        <a aria-label="Send email" href="mailto:{{ site.user.email }}"><i class="icon fa fa-envelope"></i></a>
-        {% endif %}
-        {% if site.user.twitter_username %}
-        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.user.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.user.facebook_username %}
-        <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.user.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.user.instagram_username %}
-        <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.user.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
-        {% endif %}
-        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.user.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
-      </div>
-  </div>
-  <a class="down" href="#profile" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
+    <div class="header">
+
+        <h1>
+            <span class="site-title">{{ site.user.fullname.en }}</span>
+            <span class="site-description">{{ site.user.occupation }}</span>
+        </h1>
+
+        <div class="header-icons">
+            {% if site.user.email %}
+            <a aria-label="Send email" href="mailto:{{ site.user.email }}"><i class="icon fa fa-envelope"></i></a>
+            {% endif %}
+            {% if site.user.twitter_username %}
+            <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.user.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if site.user.facebook_username %}
+            <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.user.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+            {% endif %}
+            {% if site.user.instagram_username %}
+            <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.user.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+            {% endif %}
+            <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.user.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="header-links">
+            <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
+        </div>
+
+    </div>
+
+    <a class="down" href="#profile" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
 </div>
