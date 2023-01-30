@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import Link from '../types/Link'
+import config from '../config'
 
 const links: Link[] = [
   {
-    url: import.meta.env.VITE_LINK_FACEBOOK,
+    url: 'mailto:' + config.profile.email,
+    icon: 'mdi:email',
+  },
+  {
+    url: config.profile.facebook_url,
     icon: 'mdi:facebook',
   },
   {
-    url: import.meta.env.VITE_LINK_INSTAGRAM,
+    url: config.profile.instagram_url,
     icon: 'mdi:instagram',
   },
   {
-    url: import.meta.env.VITE_LINK_TWITTER,
+    url: config.profile.twitter_url,
     icon: 'mdi:twitter',
   },
 ]
