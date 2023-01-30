@@ -4,7 +4,7 @@ import config from '../config'
 
 <template>
   <footer class="fixed bottom-0 w-full">
-    <div class="container mx-auto my-2 text-center">
+    <div class="container mx-auto px-1 py-2 text-center md:px-0">
       <p class="mb-0">
         <small>&copy; 2023 Ryo Hashimoto</small>
       </p>
