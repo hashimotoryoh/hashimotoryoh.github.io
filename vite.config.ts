@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'hashimotoryoh.github.io',
   plugins: [
     vue(),
     Pages(),
