@@ -25,7 +25,7 @@ const links: Link[] = [
 <template>
   <div class="container mx-auto py-4">
     <div class="mb-8 text-center">
-      <img src="/img/profile.png" srcset="/img/profile.png 1x, /img/profile@2x.png 2x, /img/profile@3x.png 3x" alt="Ryo Hashimoto" width="96" height="96" class="mx-auto mb-4 border rounded-full" />
+      <img src="/img/profile.jpg" srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x" alt="Ryo Hashimoto" width="96" height="96" class="mx-auto mb-4 border rounded-full" />
       <h1 class="h1 font-bold text-xl">Ryo Hashimoto</h1>
     </div>
     <ul class="flex justify-center space-x-8 mx-auto my-2">
