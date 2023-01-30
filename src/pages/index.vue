@@ -30,7 +30,7 @@ const links: Link[] = [
     </div>
     <ul class="flex justify-center space-x-8 mx-auto my-2">
       <li v-for="link in links">
-        <a :href="link.url" target="_blank" rel="nofollow" class="display text-slate-400 hover:text-black">
+        <a :href="link.url" target="_blank" rel="nofollow" class="display text-slate-400 rounded hover:text-black">
           <Icon :icon="link.icon" class="text-4xl" />
         </a>
       </li>
