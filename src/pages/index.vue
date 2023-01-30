@@ -1,3 +1,3 @@
 <template>
-  index
+  <h1 class="text-center">index</h1>
 </template>
