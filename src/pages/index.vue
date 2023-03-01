@@ -8,15 +8,15 @@ const links: Link[] = [
     icon: 'mdi:email',
   },
   {
-    url: config.profile.facebook_url,
+    url: config.sns.facebook_url,
     icon: 'mdi:facebook',
   },
   {
-    url: config.profile.instagram_url,
+    url: config.sns.instagram_url,
     icon: 'mdi:instagram',
   },
   {
-    url: config.profile.twitter_url,
+    url: config.sns.twitter_url,
     icon: 'mdi:twitter',
   },
 ]
