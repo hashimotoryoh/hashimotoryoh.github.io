@@ -25,7 +25,7 @@ function copyURL()
     </div>
   </header>
 
-  <div v-if="shareMenuVisible" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50">
+  <div v-if="shareMenuVisible" class="fixed top-0 left-0 w-full h-full z-50 bg-black bg-opacity-50">
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
         <div class="relative max-w-full p-4 bg-white rounded-lg">

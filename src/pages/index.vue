@@ -34,7 +34,7 @@ const links: Link[] = [
     </div>
     <ul class="flex justify-center space-x-8 mx-auto my-2">
       <li v-for="link in links">
-        <a :href="link.url" target="_blank" rel="nofollow" class="display text-slate-400 rounded hover:text-black">
+        <a :href="link.url" target="_blank" rel="nofollow" class="display rounded slate hover:filter-none">
           <img v-if="link.icon.startsWith('http') || link.icon.startsWith('/')" :src="link.icon" class="w-9 border border-black rounded-full" />
           <Icon v-else :icon="link.icon" class="text-4xl" />
         </a>
