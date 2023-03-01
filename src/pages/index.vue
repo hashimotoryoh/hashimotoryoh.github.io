@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SnsLinks from '../components/SnsLinks.vue'
+import InstagramMedia from '../components/InstagramMedia.vue'
 </script>
 
 <template>
@@ -10,5 +11,6 @@ import SnsLinks from '../components/SnsLinks.vue'
     </div>
     <SnsLinks />
     <hr class="my-8 mx-2">
+    <InstagramMedia />
   </div>
 </template>
