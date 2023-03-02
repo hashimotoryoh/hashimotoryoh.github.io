@@ -14,7 +14,7 @@ const instagramLink = links.find(i => i.name === 'Instagram')
         alt="Ryoh Hashimoto"
         width="96"
         height="96"
-        class="mx-auto my-4 border rounded-full"
+        class="mx-auto my-4 border rounded-full pointer-events-none"
       >
       <h1 class="h1 font-bold text-xl">
         Ryoh Hashimoto
@@ -67,7 +67,7 @@ const instagramLink = links.find(i => i.name === 'Instagram')
             <img
               :src="theMedia.media_url.toString()"
               :alt="theMedia.caption"
-              class="w-full h-full object-cover rounded"
+              class="w-full h-full object-cover rounded pointer-events-none"
             >
           </a>
         </li>
