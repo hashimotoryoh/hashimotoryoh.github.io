@@ -1,0 +1,26 @@
+name: Check eslint
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.8.0'
+
+      - name: Install node modules
+        run: npm install
+
+      - name: Check eslint
+        run: npm run lint
