@@ -15,7 +15,6 @@ import InstagramMedia from '../components/InstagramMedia.vue'
     <SnsLinks />
     <hr class="my-8 mx-2">
     <div class="max-w-screen-md mx-auto px-2">
-      <InstagramMedia />
     </div>
   </div>
 </template>
