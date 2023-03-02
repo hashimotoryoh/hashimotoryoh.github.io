@@ -13,9 +13,9 @@ onMounted(() => {
   <p v-if="loading">Loading...</p>
   <div else>
     <ul class="grid grid-cols-3 gap-1">
-      <li v-for="theMedia in filteredMedia" class="">
-        <a :href="theMedia.permalink.toString()" target="_blank" class="block">
-          <img :src="theMedia.media_url.toString()" :alt="theMedia.caption" class="rounded">
+      <li v-for="theMedia in filteredMedia" class="aspect-square">
+        <a :href="theMedia.permalink.toString()" target="_blank">
+          <img :src="theMedia.media_url.toString()" :alt="theMedia.caption" class="w-full h-full object-cover rounded">
         </a>
       </li>
     </ul>
