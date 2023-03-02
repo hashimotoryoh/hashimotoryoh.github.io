@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useFetchMedia } from '../classes/InstagramMedia'
+import Loading from './Loading.vue'
+import config from '../config'
 
 const { loading, media, fetchMedia } = useFetchMedia()
 const mediaToShow = computed(() => {
@@ -14,8 +16,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <p v-if="loading">Loading...</p>
-  <div else>
+  <Loading v-if="loading" class="block mx-auto text-slate-400 text-4xl" />
+  <div v-else>
     <ul class="grid grid-cols-3 gap-1">
       <li v-for="theMedia in mediaToShow" class="aspect-square">
         <a :href="theMedia.permalink.toString()" target="_blank">
@@ -23,5 +25,8 @@ onMounted(() => {
         </a>
       </li>
     </ul>
+    <div class="my-2 text-center">
+      <a :href="config.sns.instagram_url" target="_blank" class="text-slate-400">See more...</a>
+    </div>
   </div>
 </template>
