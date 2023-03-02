@@ -25,7 +25,10 @@ const instagramLink = links.find(i => i.name === 'Instagram')
     </div>
 
     <ul class="flex justify-center space-x-8 mx-auto my-2">
-      <li v-for="link in links">
+      <li
+        v-for="link in links"
+        :key="link.name"
+      >
         <a
           :href="link.url"
           :title="link.name"
@@ -54,6 +57,7 @@ const instagramLink = links.find(i => i.name === 'Instagram')
       <ul class="grid grid-cols-3 gap-1">
         <li
           v-for="theMedia in media"
+          :key="theMedia.id"
           class="aspect-square grayscale"
         >
           <a
