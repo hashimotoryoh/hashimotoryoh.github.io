@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
   <Loading v-if="loading" class="block mx-auto text-slate-400 text-4xl" />
-  <div v-else>
+  <div v-else-if="mediaToShow?.length">
     <ul class="grid grid-cols-3 gap-1">
       <li v-for="theMedia in mediaToShow" class="aspect-square grayscale">
         <a :href="theMedia.permalink.toString()" target="_blank">
