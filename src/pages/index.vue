@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SnsLinks from '../components/SnsLinks.vue'
 import InstagramMedia from '../components/InstagramMedia.vue'
+import config from '../config'
 </script>
 
 <template>
@@ -13,6 +14,9 @@ import InstagramMedia from '../components/InstagramMedia.vue'
     <hr class="my-8 mx-2">
     <div class="max-w-screen-md mx-auto px-2">
       <InstagramMedia />
+      <div class="my-2 text-center">
+        <a :href="config.sns.instagram_url" target="_blank" class="text-slate-400">See more...</a>
+      </div>
     </div>
   </div>
 </template>
