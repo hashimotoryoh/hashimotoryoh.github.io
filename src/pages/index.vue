@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import links from '../assets/json/sns.json'
+import media from '../assets/json/instagram_media.json'
+
+const instagramLink = links.find(i => i.name === 'Instagram')
 </script>
 
 <template>
@@ -22,7 +25,18 @@ import links from '../assets/json/sns.json'
     </ul>
 
     <hr class="my-8 mx-2">
+
     <div class="max-w-screen-md mx-auto my-8 px-2">
+      <ul class="grid grid-cols-3 gap-1">
+        <li v-for="theMedia in media" class="aspect-square grayscale">
+          <a :href="theMedia.permalink.toString()" target="_blank">
+            <img :src="theMedia.media_url.toString()" :alt="theMedia.caption" class="w-full h-full object-cover rounded">
+          </a>
+        </li>
+      </ul>
+      <div class="my-2 text-center">
+        <a v-if="instagramLink" :href="instagramLink?.url" target="_blank" class="text-slate-400">See more...</a>
+      </div>
     </div>
   </div>
 </template>
