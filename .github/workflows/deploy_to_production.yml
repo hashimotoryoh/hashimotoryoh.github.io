@@ -3,7 +3,6 @@ name: Deploy to production env
 on:
   release:
     types: [ released ]
-  workflow_dispatch:
 
 jobs:
   deploy:
