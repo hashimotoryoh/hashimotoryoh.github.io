@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Email",
+    "url": "mailto:hashimotoryoh@gmail.com",
+    "icon": "mdi:email"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/ryoh.hashimoto",
+    "icon": "mdi:facebook"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/hashimotoryoh",
+    "icon": "mdi:instagram"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/hashimotoryoh",
+    "icon": "mdi:twitter"
+  },
+  {
+    "name": "note",
+    "url": "https://note.com/hashimotoryoh",
+    "icon": "/img/note/square.svg"
+  }
+]

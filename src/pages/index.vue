@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SnsLinks from '../components/SnsLinks.vue'
+import links from '../assets/json/sns.json'
 </script>
 
 <template>
@@ -11,7 +11,16 @@ import SnsLinks from '../components/SnsLinks.vue'
         I'm in Vancouver on working holiday! &#127464;&#127462;
       </p>
     </div>
-    <SnsLinks />
+
+    <ul class="flex justify-center space-x-8 mx-auto my-2">
+      <li v-for="link in links">
+        <a :href="link.url" :title="link.name" target="_blank" rel="nofollow" class="display rounded slate hover:filter-none">
+          <img v-if="link.icon.startsWith('http') || link.icon.startsWith('/')" :src="link.icon" :alt="link.name" class="w-9 border border-black rounded-full" />
+          <Icon v-else :icon="link.icon" class="text-4xl" />
+        </a>
+      </li>
+    </ul>
+
     <hr class="my-8 mx-2">
     <div class="max-w-screen-md mx-auto my-8 px-2">
     </div>
