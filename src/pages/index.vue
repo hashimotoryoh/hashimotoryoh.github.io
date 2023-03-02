@@ -8,8 +8,17 @@ const instagramLink = links.find(i => i.name === 'Instagram')
 <template>
   <div class="container mx-auto">
     <div class="mb-8 text-center">
-      <img src="/img/profile.jpg" srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x" alt="Ryoh Hashimoto" width="96" height="96" class="mx-auto my-4 border rounded-full" />
-      <h1 class="h1 font-bold text-xl">Ryoh Hashimoto</h1>
+      <img
+        src="/img/profile.jpg"
+        srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x"
+        alt="Ryoh Hashimoto"
+        width="96"
+        height="96"
+        class="mx-auto my-4 border rounded-full"
+      >
+      <h1 class="h1 font-bold text-xl">
+        Ryoh Hashimoto
+      </h1>
       <p>
         I'm in Vancouver on working holiday! &#127464;&#127462;
       </p>
@@ -17,9 +26,24 @@ const instagramLink = links.find(i => i.name === 'Instagram')
 
     <ul class="flex justify-center space-x-8 mx-auto my-2">
       <li v-for="link in links">
-        <a :href="link.url" :title="link.name" target="_blank" rel="nofollow" class="display rounded slate hover:filter-none">
-          <img v-if="link.icon.startsWith('http') || link.icon.startsWith('/')" :src="link.icon" :alt="link.name" class="w-9 border border-black rounded-full" />
-          <Icon v-else :icon="link.icon" class="text-4xl" />
+        <a
+          :href="link.url"
+          :title="link.name"
+          target="_blank"
+          rel="nofollow"
+          class="display rounded slate hover:filter-none"
+        >
+          <img
+            v-if="link.icon.startsWith('http') || link.icon.startsWith('/')"
+            :src="link.icon"
+            :alt="link.name"
+            class="w-9 border border-black rounded-full"
+          >
+          <Icon
+            v-else
+            :icon="link.icon"
+            class="text-4xl"
+          />
         </a>
       </li>
     </ul>
@@ -28,14 +52,29 @@ const instagramLink = links.find(i => i.name === 'Instagram')
 
     <div class="max-w-screen-md mx-auto my-8 px-2">
       <ul class="grid grid-cols-3 gap-1">
-        <li v-for="theMedia in media" class="aspect-square grayscale">
-          <a :href="theMedia.permalink.toString()" target="_blank">
-            <img :src="theMedia.media_url.toString()" :alt="theMedia.caption" class="w-full h-full object-cover rounded">
+        <li
+          v-for="theMedia in media"
+          class="aspect-square grayscale"
+        >
+          <a
+            :href="theMedia.permalink.toString()"
+            target="_blank"
+          >
+            <img
+              :src="theMedia.media_url.toString()"
+              :alt="theMedia.caption"
+              class="w-full h-full object-cover rounded"
+            >
           </a>
         </li>
       </ul>
       <div class="my-2 text-center">
-        <a v-if="instagramLink" :href="instagramLink?.url" target="_blank" class="text-slate-400">See more...</a>
+        <a
+          v-if="instagramLink"
+          :href="instagramLink?.url"
+          target="_blank"
+          class="text-slate-400"
+        >See more...</a>
       </div>
     </div>
   </div>

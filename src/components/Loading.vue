@@ -1,3 +1,6 @@
 <template>
-  <Icon icon="mdi:loading" class="loading animate-spin" />
+  <Icon
+    icon="mdi:loading"
+    class="loading animate-spin"
+  />
 </template>
