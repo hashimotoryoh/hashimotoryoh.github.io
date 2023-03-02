@@ -3,7 +3,7 @@ import config from '../config'
 </script>
 
 <template>
-  <footer class="fixed bottom-0 w-full">
+  <footer class="w-full">
     <div class="container mx-auto px-1 py-2 text-center md:px-0">
       <p class="mb-0">
         <small>&copy; 2023 Ryoh Hashimoto</small>
