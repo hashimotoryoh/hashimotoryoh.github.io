@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: '18.8.0'
 
+      - name: Set version
+        run: echo "VITE_APP_VERSION=${GITHUB_REF#refs/*/}"
+
       - name: Install node modules
         run: npm install
 
