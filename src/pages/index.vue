@@ -51,9 +51,9 @@ const instagramLink = links.find(i => i.name === 'Instagram')
       </li>
     </ul>
 
-    <hr class="my-8 mx-2">
+    <hr class="my-8 mx-1">
 
-    <div class="max-w-screen-md mx-auto my-8 px-2">
+    <div class="max-w-screen-md mx-auto my-8 px-1">
       <ul class="grid grid-cols-3 gap-1">
         <li
           v-for="theMedia in media"
