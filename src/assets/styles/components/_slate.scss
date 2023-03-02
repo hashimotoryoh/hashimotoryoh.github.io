@@ -1,3 +1,5 @@
 .slate {
   filter: invert(76%) sepia(12%) saturate(481%) hue-rotate(175deg) brightness(83%) contrast(88%);
+  -webkit-filter: invert(76%) sepia(12%) saturate(481%) hue-rotate(175deg) brightness(83%) contrast(88%);
+  -ms-filter: invert(76%) sepia(12%) saturate(481%) hue-rotate(175deg) brightness(83%) contrast(88%);
 }
