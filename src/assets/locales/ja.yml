@@ -7,6 +7,7 @@ components:
   GlobalFooter:
     copyright: "2023 Ryoh Hashimoto"
   GlobalHeader:
+    choose_your_locale: "言語を選択"
     copied: "コピーしました"
     copy: "コピー"
     share_this_page: "このページを共有"
