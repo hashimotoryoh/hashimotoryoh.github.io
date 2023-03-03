@@ -48,7 +48,7 @@ function copyURL()
   >
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
-        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-full">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm md:px-12">
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.choose_your_locale') }}
           </h5>
@@ -66,7 +66,7 @@ function copyURL()
             <li
               v-for="locale in $i18n.availableLocales"
               :key="locale"
-              class="flex justify-center items-center space-x-2 my-4"
+              class="flex justify-center items-center space-x-2 my-4 cursor-pointer"
               @click="$i18n.locale = locale"
             >
               <Icon
@@ -94,7 +94,7 @@ function copyURL()
   >
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
-        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-full">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm">
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.share_this_page') }}
           </h5>
