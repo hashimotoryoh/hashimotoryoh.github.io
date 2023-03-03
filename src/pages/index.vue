@@ -58,12 +58,11 @@ const instagramLink = links.find(i => i.name === 'Instagram')
         <li
           v-for="theMedia in media"
           :key="theMedia.id"
-          class="aspect-square grayscale"
+          class="aspect-square grayscale relative"
         >
           <a
             :href="theMedia.permalink.toString()"
             target="_blank"
-            class="relative"
           >
             <img
               :src="theMedia.media_url.toString()"
