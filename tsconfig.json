@@ -17,6 +17,7 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "types": [
+      "node",
       "vite/client",
       "vite-plugin-pages/client",
     ],

@@ -22,7 +22,7 @@ defineComponent({
         class="mx-auto my-4 border rounded-full pointer-events-none"
       >
       <h1 class="h1 font-bold text-xl">
-        Ryoh Hashimoto
+        {{ $t('fullname') }}
       </h1>
       <p>
         I'm in Vancouver on working holiday! &#127464;&#127462;
