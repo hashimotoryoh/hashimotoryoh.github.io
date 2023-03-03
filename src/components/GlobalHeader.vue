@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import config from '../config'
 
+const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
 
 const messageForCopy = ref<string>('Copy')
@@ -18,6 +19,26 @@ function copyURL()
   <header>
     <div class="container mx-auto px-1 py-2 md:px-0">
       <ul class="flex justify-end">
+        <li
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          @click="localeMenuVisible = true"
+        >
+          <Icon
+            icon="mdi:translate-variant"
+            class="text-2xl font-thin text-slate-400"
+          />
+          <div v-if="localeMenuVisible">
+            <select v-model="$i18n.locale">
+              <option
+                v-for="locale in $i18n.availableLocales"
+                :key="locale"
+                :value="locale"
+              >
+                {{ $t(`locale.${locale}`) }}
+              </option>
+            </select>
+          </div>
+        </li>
         <li
           class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
           @click="shareMenuVisible = true"
