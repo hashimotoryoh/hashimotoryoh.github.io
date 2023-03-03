@@ -1,3 +1,9 @@
 {
-  "fullname": "Ryoh Hashimoto"
+  "pages": {
+    "index": {
+      "caption": "I'm in Vancouver on working holiday! 🇨🇦",
+      "fullname": "Ryoh Hashimoto",
+      "see_more": "See more..."
+    }
+  }
 }

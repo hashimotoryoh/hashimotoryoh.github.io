@@ -1,3 +1,9 @@
 {
-  "fullname": "橋本 龍"
+  "pages": {
+    "index": {
+      "caption": "ワーキングホリデーでバンクーバーに滞在中 🇨🇦",
+      "fullname": "橋本 龍",
+      "see_more": "もっとみる..."
+    }
+  }
 }
