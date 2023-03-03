@@ -4,9 +4,16 @@ import config from '../config'
 const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
 
+function switchTheme() {
+  const htmlElem = document.getElementsByTagName('html')[0]
+  if (htmlElem.classList.contains('dark'))
+    htmlElem.classList.remove('dark')
+  else
+    htmlElem.classList.add('dark')
+}
+
 const messageForCopy = ref<string>('Copy')
-function copyURL()
-{
+function copyURL() {
   navigator.clipboard.writeText(config.app.base_url)
   messageForCopy.value = 'Copied'
   setTimeout(() => {
@@ -19,8 +26,15 @@ function copyURL()
   <header>
     <div class="container mx-auto px-1 py-2 md:px-0">
       <ul class="flex justify-end">
+        <li class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800">
+          <Icon
+            icon="mdi:theme-light-dark"
+            class="text-2xl font-thin text-slate-400"
+            @click="switchTheme"
+          />
+        </li>
         <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
           @click="localeMenuVisible = true"
         >
           <Icon
@@ -29,7 +43,7 @@ function copyURL()
           />
         </li>
         <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
           @click="shareMenuVisible = true"
         >
           <Icon
