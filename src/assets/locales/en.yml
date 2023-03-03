@@ -1,0 +1,18 @@
+locale:
+  en: "🇺🇸 English"
+  ja: "🇯🇵 日本語"
+global:
+  qr_code: "QR Code"
+components:
+  GlobalFooter:
+    copyright: "2023 Ryoh Hashimoto"
+  GlobalHeader:
+    choose_your_locale: "Choose your locale"
+    copied: "Copied"
+    copy: "Copy"
+    share_this_page: "Share this page"
+pages:
+  index:
+    caption: "I'm in Vancouver on working holiday! 🇨🇦"
+    fullname: "Ryoh Hashimoto"
+    see_more: "See more..."

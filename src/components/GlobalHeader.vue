@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import config from '../config'
 
+const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
 
 const messageForCopy = ref<string>('Copy')
@@ -20,6 +21,15 @@ function copyURL()
       <ul class="flex justify-end">
         <li
           class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          @click="localeMenuVisible = true"
+        >
+          <Icon
+            icon="mdi:translate-variant"
+            class="text-2xl font-thin text-slate-400"
+          />
+        </li>
+        <li
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
           @click="shareMenuVisible = true"
         >
           <Icon
@@ -31,15 +41,62 @@ function copyURL()
     </div>
   </header>
 
+  <!-- 言語メニュー -->
+  <div
+    v-if="localeMenuVisible"
+    class="fixed top-0 left-0 w-full h-full z-50 bg-black bg-opacity-50"
+  >
+    <div class="container mx-auto p-8 h-full">
+      <div class="flex justify-center items-center h-full">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-full">
+          <h5 class="h5 text-center font-bold">
+            {{ $t('components.GlobalHeader.choose_your_locale') }}
+          </h5>
+          <div
+            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200"
+            @click="localeMenuVisible = false"
+          >
+            <Icon
+              icon="material-symbols:close"
+              class="text-xl font-thin text-slate-400"
+            />
+          </div>
+
+          <ul class="text-center">
+            <li
+              v-for="locale in $i18n.availableLocales"
+              :key="locale"
+              class="flex justify-center items-center space-x-2 my-4"
+              @click="$i18n.locale = locale"
+            >
+              <Icon
+                v-if="$i18n.locale === locale"
+                icon="mdi:check-bold"
+                class="text-slate-400"
+              />
+              <span
+                v-else
+                class="display w-[1em] h-[1em]"
+              />
+              <span>{{ $t(`locale.${locale}`) }}</span>
+              <span class="display w-[1em] h-[1em]" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 共有メニュー -->
   <div
     v-if="shareMenuVisible"
     class="fixed top-0 left-0 w-full h-full z-50 bg-black bg-opacity-50"
   >
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
-        <div class="relative max-w-full p-4 bg-white rounded-lg">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-full">
           <h5 class="h5 text-center font-bold">
-            Share this page
+            {{ $t('components.GlobalHeader.share_this_page') }}
           </h5>
           <div
             class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200"
@@ -53,7 +110,7 @@ function copyURL()
           <img
             src="/img/qr.png"
             srcset="/img/qr.png 1x, /img/qr@2x.png 2x, /img/qr@3x.png 3x"
-            alt="QR Code"
+            :alt="$t('global.qr_code')"
             class="mx-auto my-8"
           >
           <div

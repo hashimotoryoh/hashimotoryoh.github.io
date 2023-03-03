@@ -6,5 +6,8 @@
   ],
   "rules": {
     "no-undef": "off"
+  },
+  "env": {
+    "node": true
   }
 }

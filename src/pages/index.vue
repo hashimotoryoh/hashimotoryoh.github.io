@@ -16,16 +16,16 @@ defineComponent({
       <img
         src="/img/profile.jpg"
         srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x"
-        alt="Ryoh Hashimoto"
+        :alt="$t('pages.index.fullname')"
         width="96"
         height="96"
         class="mx-auto my-4 border rounded-full pointer-events-none"
       >
       <h1 class="h1 font-bold text-xl">
-        Ryoh Hashimoto
+        {{ $t('pages.index.fullname') }}
       </h1>
       <p>
-        I'm in Vancouver on working holiday! &#127464;&#127462;
+        {{ $t('pages.index.caption') }}
       </p>
     </div>
 
@@ -96,7 +96,7 @@ defineComponent({
           :href="instagramLink?.url"
           target="_blank"
           class="text-slate-400"
-        >See more...</a>
+        >{{ $t('pages.index.see_more') }}</a>
       </div>
     </div>
   </div>
