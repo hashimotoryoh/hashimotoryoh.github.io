@@ -62,12 +62,12 @@ function copyURL() {
   >
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
-        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm md:px-12">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm md:px-12 dark:bg-dark">
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.choose_your_locale') }}
           </h5>
           <div
-            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200"
+            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="localeMenuVisible = false"
           >
             <Icon
@@ -108,12 +108,12 @@ function copyURL() {
   >
     <div class="container mx-auto p-8 h-full">
       <div class="flex justify-center items-center h-full">
-        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm">
+        <div class="relative w-full p-4 bg-white rounded-lg md:w-auto md:max-w-screen-sm dark:bg-dark">
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.share_this_page') }}
           </h5>
           <div
-            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200"
+            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="shareMenuVisible = false"
           >
             <Icon
@@ -125,10 +125,16 @@ function copyURL() {
             src="/img/qr.png"
             srcset="/img/qr.png 1x, /img/qr@2x.png 2x, /img/qr@3x.png 3x"
             :alt="$t('global.qr_code')"
-            class="mx-auto my-8"
+            class="mx-auto my-8 dark:hidden"
+          >
+          <img
+            src="/img/qr-dark.png"
+            srcset="/img/qr-dark.png 1x, /img/qr-dark@2x.png 2x, /img/qr-dark@3x.png 3x"
+            :alt="$t('global.qr_code')"
+            class="mx-auto my-8 dark:block"
           >
           <div
-            class="flex space-x-2 px-2 py-4 border rounded cursor-pointer hover:bg-slate-200"
+            class="flex space-x-2 px-2 py-4 border rounded cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="copyURL"
           >
             <div class="grow min-w-0">
