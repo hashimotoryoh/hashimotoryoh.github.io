@@ -6,7 +6,23 @@ module.exports = {
   ],
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        light: {
+          DEFAULT: '#c9d1d9',
+        },
+      },
+      backgroundColor: {
+        dark: {
+          DEFAULT: '#0d1117',
+        },
+      },
+      borderColor: {
+        light: {
+          DEFAULT: '#c9d1d9',
+        }
+      }
+    },
   },
   plugins: [],
 }

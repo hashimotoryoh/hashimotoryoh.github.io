@@ -20,7 +20,7 @@ function copyURL()
     <div class="container mx-auto px-1 py-2 md:px-0">
       <ul class="flex justify-end">
         <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
           @click="localeMenuVisible = true"
         >
           <Icon
@@ -29,7 +29,7 @@ function copyURL()
           />
         </li>
         <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200"
+          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
           @click="shareMenuVisible = true"
         >
           <Icon

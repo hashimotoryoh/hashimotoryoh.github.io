@@ -19,7 +19,7 @@ defineComponent({
         :alt="$t('pages.index.fullname')"
         width="96"
         height="96"
-        class="mx-auto my-4 border rounded-full pointer-events-none"
+        class="mx-auto my-4 border rounded-full pointer-events-none dark:border-slate-800"
       >
       <h1 class="h1 font-bold text-xl">
         {{ $t('pages.index.fullname') }}
@@ -39,7 +39,7 @@ defineComponent({
           :title="link.name"
           target="_blank"
           rel="nofollow"
-          class="display rounded text-slate-400 border-slate-400 hover:text-inherit hover:border-black"
+          class="display rounded text-slate-400 border-slate-400 hover:text-inherit hover:border-black dark:hover:border-light"
         >
           <template v-if="link.content_type === 'text'">{{ link.content }}</template>
           <img
