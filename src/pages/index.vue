@@ -34,13 +34,13 @@ const instagramLink = links.find(i => i.name === 'Instagram')
           :title="link.name"
           target="_blank"
           rel="nofollow"
-          class="display rounded slate hover:filter-none"
+          class="display rounded text-slate-400 border-slate-400 hover:text-inherit hover:border-black"
         >
           <img
             v-if="link.icon.startsWith('http') || link.icon.startsWith('/')"
             :src="link.icon"
             :alt="link.name"
-            class="w-9 border border-black rounded-full"
+            class="w-9 border border-inherit rounded-full"
           >
           <Icon
             v-else
