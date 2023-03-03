@@ -39,7 +39,7 @@ function copyURL()
       <div class="flex justify-center items-center h-full">
         <div class="relative max-w-full p-4 bg-white rounded-lg">
           <h5 class="h5 text-center font-bold">
-            Share this page
+            {{ $t('components.GlobalHeader.share_this_page') }}
           </h5>
           <div
             class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200"
@@ -53,7 +53,7 @@ function copyURL()
           <img
             src="/img/qr.png"
             srcset="/img/qr.png 1x, /img/qr@2x.png 2x, /img/qr@3x.png 3x"
-            alt="QR Code"
+            :alt="$t('global.qr_code')"
             class="mx-auto my-8"
           >
           <div
