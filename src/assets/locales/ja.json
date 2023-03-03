@@ -1,5 +1,8 @@
 {
   "components": {
+    "GlobalFooter": {
+      "copyright": "2023 Ryoh Hashimoto"
+    },
     "GlobalHeader": {
       "copied": "コピーしました",
       "copy": "コピー",
