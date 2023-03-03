@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import links from '../assets/json/sns.json'
 import media from '../assets/json/instagram_media.json'
+import InlineSvg from 'vue-inline-svg'
 
 const instagramLink = links.find(i => i.name === 'Instagram')
+
+defineComponent({
+  InlineSvg
+})
 </script>
 
 <template>
@@ -41,14 +46,12 @@ const instagramLink = links.find(i => i.name === 'Instagram')
             v-else-if="link.content_type === 'img'"
             :src="link.content"
             :alt="link.name"
-            class="w-9 border border-inherit rounded-full"
+            class="w-9 h-9 border border-inherit rounded-full"
           >
-          <object
+          <InlineSvg
             v-else-if="link.content_type === 'svg'"
-            type="image/svg+xml"
-            :data="link.content"
-            :alt="link.name"
-            class="w-9 border border-inherit rounded-full"
+            :src="link.content"
+            class="w-9 h-9 border border-inherit rounded-full"
           />
           <Icon
             v-else-if="link.content_type === 'mdi'"
