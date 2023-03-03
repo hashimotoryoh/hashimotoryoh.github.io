@@ -6,6 +6,13 @@ import config from './config'
 useHead({
   title: config.app.app_name,
 })
+
+// システムテーマによってダークモードにする
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+if (isDarkMode) {
+  const htmlElem = document.getElementsByTagName('html')[0]
+  htmlElem.classList.add('dark')
+}
 </script>
 
 <template>

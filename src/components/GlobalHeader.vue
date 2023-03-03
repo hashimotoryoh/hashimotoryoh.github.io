@@ -5,11 +5,11 @@ const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
 
 function switchTheme() {
-  const html = document.getElementsByTagName('html')[0]
-  if (html.classList.contains('dark'))
-    html.classList.remove('dark')
+  const htmlElem = document.getElementsByTagName('html')[0]
+  if (htmlElem.classList.contains('dark'))
+    htmlElem.classList.remove('dark')
   else
-    html.classList.add('dark')
+    htmlElem.classList.add('dark')
 }
 
 const messageForCopy = ref<string>('Copy')
