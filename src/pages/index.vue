@@ -36,17 +36,26 @@ const instagramLink = links.find(i => i.name === 'Instagram')
           rel="nofollow"
           class="display rounded text-slate-400 border-slate-400 hover:text-inherit hover:border-black"
         >
+          <template v-if="link.content_type === 'text'">{{ link.content }}</template>
           <img
-            v-if="link.icon.startsWith('http') || link.icon.startsWith('/')"
-            :src="link.icon"
+            v-else-if="link.content_type === 'img'"
+            :src="link.content"
             :alt="link.name"
             class="w-9 border border-inherit rounded-full"
           >
+          <object
+            v-else-if="link.content_type === 'svg'"
+            type="image/svg+xml"
+            :data="link.content"
+            :alt="link.name"
+            class="w-9 border border-inherit rounded-full"
+          />
           <Icon
-            v-else
-            :icon="link.icon"
+            v-else-if="link.content_type === 'mdi'"
+            :icon="link.content"
             class="text-4xl"
           />
+          <template v-else>{{ link.content }}</template>
         </a>
       </li>
     </ul>

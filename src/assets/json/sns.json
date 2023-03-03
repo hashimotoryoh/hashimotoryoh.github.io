@@ -1,27 +1,32 @@
 [
   {
+    "content": "mdi:email",
+    "content_type": "mdi",
     "name": "Email",
-    "url": "mailto:hashimotoryoh@gmail.com",
-    "icon": "mdi:email"
+    "url": "mailto:hashimotoryoh@gmail.com"
   },
   {
+    "content": "mdi:facebook",
+    "content_type": "mdi",
     "name": "Facebook",
-    "url": "https://www.facebook.com/ryoh.hashimoto",
-    "icon": "mdi:facebook"
+    "url": "https://www.facebook.com/ryoh.hashimoto"
   },
   {
+    "content": "mdi:instagram",
+    "content_type": "mdi",
     "name": "Instagram",
-    "url": "https://www.instagram.com/hashimotoryoh",
-    "icon": "mdi:instagram"
+    "url": "https://www.instagram.com/hashimotoryoh"
   },
   {
+    "content": "mdi:twitter",
+    "content_type": "mdi",
     "name": "Twitter",
-    "url": "https://twitter.com/hashimotoryoh",
-    "icon": "mdi:twitter"
+    "url": "https://twitter.com/hashimotoryoh"
   },
   {
+    "content": "/img/note/square.svg",
+    "content_type": "svg",
     "name": "note",
-    "url": "https://note.com/hashimotoryoh",
-    "icon": "/img/note/square.svg"
+    "url": "https://note.com/hashimotoryoh"
   }
 ]
