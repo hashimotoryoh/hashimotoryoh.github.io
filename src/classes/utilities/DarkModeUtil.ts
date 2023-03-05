@@ -1,30 +1,26 @@
 export function useDarkMode() {
-  const isDarkMode = ref<boolean>(false)
+  const darkMode = ref<boolean>(false)
   const htmlDOM = document.getElementsByTagName('html')[0]
 
-  watch(isDarkMode, (newValue) => {
-    if (newValue)
-      htmlDOM.classList.add('dark')
-    else
-      htmlDOM.classList.remove('dark')
-  })
-
   const turnOn = () => {
-    isDarkMode.value = true
+    darkMode.value = true
+    htmlDOM.classList.add('dark')
   }
 
   const turnOff = () => {
-    isDarkMode.value = false
+    darkMode.value = false
+    htmlDOM.classList.remove('dark')
   }
 
   const switchDarkMode = () => {
-    isDarkMode.value ? turnOff() : turnOn()
+    darkMode.value ? turnOff() : turnOn()
   }
 
   onMounted(() => {
-    isDarkMode.value = htmlDOM.classList.contains('dark')
+    darkMode.value = htmlDOM.classList.contains('dark')
   })
 
+  const isDarkMode = readonly(darkMode)
   return {
     isDarkMode,
     switchDarkMode,
