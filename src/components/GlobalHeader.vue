@@ -20,31 +20,39 @@ function copyURL() {
 <template>
   <header>
     <div class="container mx-auto px-1 py-2 md:px-0">
-      <ul class="flex justify-end">
-        <li class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800">
-          <Icon
-            icon="mdi:theme-light-dark"
-            class="text-2xl font-thin text-slate-400"
+      <ul class="flex justify-end space-x-1">
+        <li>
+          <button
+            class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="switchDarkMode"
-          />
+          >
+            <Icon
+              icon="mdi:theme-light-dark"
+              class="text-2xl font-thin text-slate-400"
+            />
+          </button>
         </li>
-        <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
-          @click="localeMenuVisible = true"
-        >
-          <Icon
-            icon="mdi:translate-variant"
-            class="text-2xl font-thin text-slate-400"
-          />
+        <li>
+          <button
+            class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
+            @click="localeMenuVisible = true"
+          >
+            <Icon
+              icon="mdi:translate-variant"
+              class="text-2xl font-thin text-slate-400"
+            />
+          </button>
         </li>
-        <li
-          class="p-4 rounded-full cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
-          @click="shareMenuVisible = true"
-        >
-          <Icon
-            icon="material-symbols:ios-share"
-            class="text-2xl font-thin text-slate-400"
-          />
+        <li>
+          <button
+            class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
+            @click="shareMenuVisible = true"
+          >
+            <Icon
+              icon="material-symbols:ios-share"
+              class="text-2xl font-thin text-slate-400"
+            />
+          </button>
         </li>
       </ul>
     </div>
@@ -61,15 +69,15 @@ function copyURL() {
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.choose_your_locale') }}
           </h5>
-          <div
-            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200 dark:hover:bg-slate-800"
+          <button
+            class="absolute top-2 right-2 p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="localeMenuVisible = false"
           >
             <Icon
               icon="material-symbols:close"
               class="text-xl font-thin text-slate-400"
             />
-          </div>
+          </button>
 
           <ul class="text-center">
             <li
@@ -107,15 +115,15 @@ function copyURL() {
           <h5 class="h5 text-center font-bold">
             {{ $t('components.GlobalHeader.share_this_page') }}
           </h5>
-          <div
-            class="absolute top-2 right-2 p-2 cursor-pointer rounded hover:bg-slate-200 dark:hover:bg-slate-800"
+          <button
+            class="absolute top-2 right-2 p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="shareMenuVisible = false"
           >
             <Icon
               icon="material-symbols:close"
               class="text-xl font-thin text-slate-400"
             />
-          </div>
+          </button>
           <img
             src="/img/qr.png"
             srcset="/img/qr.png 1x, /img/qr@2x.png 2x, /img/qr@3x.png 3x"
