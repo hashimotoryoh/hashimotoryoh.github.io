@@ -1,16 +1,11 @@
 <script setup lang="ts">
+import { useDarkMode } from '../classes/utilities/DarkModeUtil'
 import config from '../config'
+
+const { switchDarkMode } = useDarkMode()
 
 const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
-
-function switchTheme() {
-  const htmlElem = document.getElementsByTagName('html')[0]
-  if (htmlElem.classList.contains('dark'))
-    htmlElem.classList.remove('dark')
-  else
-    htmlElem.classList.add('dark')
-}
 
 const messageForCopy = ref<string>('Copy')
 function copyURL() {
@@ -30,7 +25,7 @@ function copyURL() {
           <Icon
             icon="mdi:theme-light-dark"
             class="text-2xl font-thin text-slate-400"
-            @click="switchTheme"
+            @click="switchDarkMode"
           />
         </li>
         <li
