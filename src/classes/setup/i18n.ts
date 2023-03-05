@@ -6,7 +6,6 @@ const i18n = createI18n({
   globalInjection: true,
   locale: navigator.language,
   fallbackLocale: 'en',
-  availableLocales: ['en', 'ja'],
   messages: messages,
 })
 
