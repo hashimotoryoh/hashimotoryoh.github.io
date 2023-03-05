@@ -79,11 +79,11 @@ function copyURL() {
             />
           </button>
 
-          <ul class="text-center">
+          <ul class="text-center my-4">
             <li
               v-for="locale in $i18n.availableLocales"
               :key="locale"
-              class="flex justify-center items-center space-x-2 my-4 cursor-pointer"
+              class="flex justify-center items-center space-x-2 space-y-1"
               @click="$i18n.locale = locale"
             >
               <Icon
@@ -95,7 +95,9 @@ function copyURL() {
                 v-else
                 class="display w-[1em] h-[1em]"
               />
-              <span>{{ $t(`locale.${locale}`) }}</span>
+              <button class="px-3 py-2 rounded hover:bg-slate-200 dark:hover:bg-slate-800">
+                {{ $t(`locale.${locale}`) }}
+              </button>
               <span class="display w-[1em] h-[1em]" />
             </li>
           </ul>
