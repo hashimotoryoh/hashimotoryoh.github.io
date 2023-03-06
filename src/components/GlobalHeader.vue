@@ -138,7 +138,7 @@ function copyURL() {
             class="flex space-x-2 px-2 py-4 border rounded cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="copyURL"
           >
-            <div class="grow min-w-0">
+            <div class="grow min-w-0 md:min-w-[12rem]">
               <p class="whitespace-nowrap overflow-hidden text-ellipsis">
                 {{ config.app.base_url }}
               </p>
