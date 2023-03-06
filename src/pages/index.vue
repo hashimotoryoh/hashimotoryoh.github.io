@@ -3,6 +3,9 @@ import links from '../assets/json/sns.json'
 import media from '../assets/json/instagram_media.json'
 import InlineSvg from 'vue-inline-svg'
 
+const NUM_OF_MEDIA_TO_VIEW = 9
+
+const mediaToView = media.slice(0, NUM_OF_MEDIA_TO_VIEW)
 const instagramLink = links.find(i => i.name === 'Instagram')
 
 defineComponent({
@@ -68,7 +71,7 @@ defineComponent({
     <div class="max-w-screen-md mx-auto my-8 px-1">
       <ul class="grid grid-cols-3 gap-1">
         <li
-          v-for="theMedia in media"
+          v-for="theMedia in mediaToView"
           :key="theMedia.id"
           class="aspect-square grayscale relative"
         >
