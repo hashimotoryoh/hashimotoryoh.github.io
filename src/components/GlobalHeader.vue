@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useDarkMode } from '../classes/utilities/DarkModeUtil'
+import { useLocale } from '../classes/utilities/LocaleUtil'
 import config from '../config'
 
 const { switchDarkMode } = useDarkMode()
+const { switchLocale } = useLocale()
 
 const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
@@ -84,7 +86,7 @@ function copyURL() {
               v-for="locale in $i18n.availableLocales"
               :key="locale"
               class="flex justify-center items-center space-x-2 space-y-1"
-              @click="$i18n.locale = locale"
+              @click="switchLocale(locale)"
             >
               <Icon
                 v-if="$i18n.locale === locale"
