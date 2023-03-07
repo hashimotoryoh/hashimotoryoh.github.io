@@ -29,4 +29,12 @@ export default defineConfig({
       include: `${__dirname}/src/assets/locales/**`,
     }),
   ],
+  resolve: {
+    alias: [
+      {
+        find: '@/',
+        replacement: `${__dirname}/src/`,
+      },
+    ],
+  },
 })
