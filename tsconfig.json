@@ -21,6 +21,11 @@
       "vite/client",
       "vite-plugin-pages/client",
     ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "src/**/*.ts",
