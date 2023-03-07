@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useDarkMode } from '../classes/utilities/DarkModeUtil'
-import { useLocale } from '../classes/utilities/LocaleUtil'
-import config from '../config'
+import { useDarkMode } from '@/classes/utilities/DarkModeUtil'
+import { useLocale } from '@/classes/utilities/LocaleUtil'
+import config from '@/config'
 
 const { switchDarkMode } = useDarkMode()
 const { switchLocale } = useLocale()

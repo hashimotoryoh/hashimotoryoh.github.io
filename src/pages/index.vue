@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import links from '../assets/json/sns.json'
-import media from '../assets/json/instagram_media.json'
+import links from '@/assets/json/sns.json'
+import media from '@/assets/json/instagram_media.json'
 import InlineSvg from 'vue-inline-svg'
 
 const NUM_OF_MEDIA_TO_VIEW = 9
