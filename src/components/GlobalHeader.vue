@@ -132,7 +132,7 @@ function copyURL() {
             src="/img/qr.png"
             srcset="/img/qr.png 1x, /img/qr@2x.png 2x, /img/qr@3x.png 3x"
             :alt="$t('global.qr_code')"
-            class="mx-auto my-8 rounded"
+            class="mx-auto my-8 rounded dark:x-invert"
           >
           <div
             class="flex space-x-2 px-2 py-4 border rounded cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800"
