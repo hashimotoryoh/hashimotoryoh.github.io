@@ -2,10 +2,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 export default VitePWA({
   devOptions: {
-    enabled: true,
+    enabled: process.env.NODE_ENV === 'development',
   },
   manifest: {
-    id: 'ryohs-link-in-bio',
+    id: process.env.npm_package_name,
     name: 'Ryoh\'s Link in Bio',
     short_name: 'Ryoh\'s LiB',
     icons: [
