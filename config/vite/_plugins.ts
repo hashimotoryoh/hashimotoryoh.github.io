@@ -9,5 +9,5 @@ export default [
   AutoImport,
   Pages,
   VitePWA,
-  VueI18nPlugin
+  VueI18nPlugin,
 ]
