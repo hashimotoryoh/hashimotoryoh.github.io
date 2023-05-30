@@ -1,5 +1,6 @@
 {
   "name": "ryohs-link-in-bio",
+  "displayName": "Ryoh's Link in Bio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
