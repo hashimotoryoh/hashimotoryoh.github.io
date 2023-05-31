@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import links from '@/assets/json/sns.json'
 import InlineSvg from 'vue-inline-svg'
-import InstagramFeed from '@/components/InstagramFeed.vue'
 
 defineComponent({
   InlineSvg
@@ -60,11 +59,5 @@ defineComponent({
         </a>
       </li>
     </ul>
-
-    <hr class="my-8 mx-1">
-
-    <div class="max-w-screen-md mx-auto my-8 px-1">
-      <InstagramFeed />
-    </div>
   </div>
 </template>
