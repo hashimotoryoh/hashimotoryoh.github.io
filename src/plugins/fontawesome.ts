@@ -1,10 +1,22 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLine,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faTwitter)
+library.add(
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLine,
+  faTwitter,
+)
 
-const faComponentName = 'font-awesome-icon'
+const faComponentName = 'fai'
 export {
   faComponentName,
   FontAwesomeIcon,
