@@ -4,7 +4,7 @@ import links from '@/assets/json/links.json'
 
 <template>
   <div class="container mx-auto">
-    <div class="mb-8 text-center">
+    <section class="mb-8 text-center">
       <img
         src="/img/profile.jpg"
         srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x"
@@ -19,7 +19,7 @@ import links from '@/assets/json/links.json'
       <p>
         {{ $t('pages.index.caption') }}
       </p>
-    </div>
+    </section>
 
     <section class="max-w-screen-md mx-auto px-2">
       <ul class="flex flex-wrap space-y-4">
