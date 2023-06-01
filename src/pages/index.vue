@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import links from '@/assets/json/sns.json'
+import links from '@/assets/json/links.json'
 import InlineSvg from 'vue-inline-svg'
 
 defineComponent({
@@ -26,38 +26,31 @@ defineComponent({
       </p>
     </div>
 
-    <ul class="flex justify-center space-x-8 mx-auto my-2">
-      <li
-        v-for="link in links"
-        :key="link.name"
-      >
-        <a
-          :href="link.url"
-          :title="link.name"
-          target="_blank"
-          rel="nofollow"
-          class="display rounded text-slate-400 border-slate-400 hover:text-inherit hover:border-black dark:hover:border-light"
+    <section class="max-w-screen-md mx-auto px-2">
+      <ul class="flex flex-wrap space-y-4">
+        <li
+          v-for="link in links"
+          :key="link.id"
+          class="w-full"
         >
-          <template v-if="link.content_type === 'text'">{{ link.content }}</template>
-          <img
-            v-else-if="link.content_type === 'img'"
-            :src="link.content"
-            :alt="link.name"
-            class="w-9 h-9 border border-inherit rounded-full"
+          <a
+            :href="link.uri"
+            :title="$t(link.name)"
+            rel="nofollow"
+            target="_blank"
+            class="block border border-slate-400 rounded-full px-6 py-3 text-slate-400 hover:border-black dark:hover:border-light hover:text-inherit"
           >
-          <InlineSvg
-            v-else-if="link.content_type === 'svg'"
-            :src="link.content"
-            class="w-9 h-9 border border-inherit rounded-full"
-          />
-          <Icon
-            v-else-if="link.content_type === 'mdi'"
-            :icon="link.content"
-            class="text-4xl"
-          />
-          <template v-else>{{ link.content }}</template>
-        </a>
-      </li>
-    </ul>
+            <div class="flex items-center relative text-lg">
+              <fai
+                v-if="link.fai"
+                :icon="link.fai"
+                class="absolute left-0"
+              />
+              <span class="w-full text-center font-bold">{{ $t(link.name) }}</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
