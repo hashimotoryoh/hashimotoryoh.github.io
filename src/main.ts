@@ -5,7 +5,6 @@ import router from '@/classes/setup/router'
 import i18n from '@/classes/setup/i18n'
 import VueCookies from 'vue3-cookies'
 import '@/assets/styles/app.scss'
-import { Icon } from '@iconify/vue'
 import { faComponentName, FontAwesomeIcon } from '@/plugins/fontawesome'
 
 createApp(App)
@@ -15,6 +14,5 @@ createApp(App)
   .use(VueCookies, {
     secure: true,
   })
-  .component('Icon', Icon)
   .component(faComponentName, FontAwesomeIcon)
   .mount('#app')
