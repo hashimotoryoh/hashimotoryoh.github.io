@@ -1,5 +1,5 @@
 import { Locale } from 'vue-i18n'
-import i18n from '@/classes/setup/i18n'
+import i18n from '@/plugins/vue-i18n'
 import { useCookies } from 'vue3-cookies'
 
 export function useLocale() {
