@@ -3,7 +3,7 @@ import { useDarkMode } from '@/classes/utilities/DarkModeUtil'
 import { useLocale } from '@/classes/utilities/LocaleUtil'
 import config from '@/config'
 
-const { switchDarkMode } = useDarkMode()
+const { isDarkMode, switchDarkMode } = useDarkMode()
 const { switchLocale } = useLocale()
 
 const localeMenuVisible = ref<boolean>(false)
@@ -28,8 +28,14 @@ function copyURL() {
             class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="switchDarkMode"
           >
-            <Icon
-              icon="mdi:theme-light-dark"
+            <fai
+              v-if="isDarkMode"
+              icon="fas fa-star-and-crescent"
+              class="text-2xl font-thin text-slate-400"
+            />
+            <fai
+              v-else
+              icon="fas fa-sun"
               class="text-2xl font-thin text-slate-400"
             />
           </button>
@@ -39,8 +45,8 @@ function copyURL() {
             class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="localeMenuVisible = true"
           >
-            <Icon
-              icon="mdi:translate-variant"
+            <fai
+              icon="fas fa-language"
               class="text-2xl font-thin text-slate-400"
             />
           </button>
@@ -50,8 +56,8 @@ function copyURL() {
             class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="shareMenuVisible = true"
           >
-            <Icon
-              icon="material-symbols:ios-share"
+            <fai
+              icon="fas fa-qrcode"
               class="text-2xl font-thin text-slate-400"
             />
           </button>
@@ -75,8 +81,8 @@ function copyURL() {
             class="absolute top-2 right-2 p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="localeMenuVisible = false"
           >
-            <Icon
-              icon="material-symbols:close"
+            <fai
+              icon="fas fa-xmark"
               class="text-xl font-thin text-slate-400"
             />
           </button>
@@ -88,9 +94,9 @@ function copyURL() {
               class="flex justify-center items-center space-x-2 space-y-1"
               @click="switchLocale(locale)"
             >
-              <Icon
+              <fai
                 v-if="$i18n.locale === locale"
-                icon="mdi:check-bold"
+                icon="fas fa-check"
                 class="text-slate-400"
               />
               <span
@@ -123,8 +129,8 @@ function copyURL() {
             class="absolute top-2 right-2 p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-800"
             @click="shareMenuVisible = false"
           >
-            <Icon
-              icon="material-symbols:close"
+            <fai
+              icon="fas fa-xmark"
               class="text-xl font-thin text-slate-400"
             />
           </button>

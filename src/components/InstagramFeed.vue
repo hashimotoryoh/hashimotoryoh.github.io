@@ -28,7 +28,7 @@ const instagramLink = links.find(i => i.name === 'Instagram')
           v-if="theMedia.media_type === 'CAROUSEL_ALBUM'"
           class="absolute top-2 right-2 -rotate-90 text-white text-lg"
         >
-          <Icon icon="mdi:checkbox-multiple-blank" />
+          <fai icon="fas fa-images" />
         </span>
       </a>
     </li>
