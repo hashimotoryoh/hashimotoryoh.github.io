@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import links from '@/assets/json/sns.json'
+import links from '@/assets/json/links.json'
 import media from '@/assets/json/instagram_media.json'
 
 const NUM_OF_MEDIA_TO_VIEW = 9
@@ -36,7 +36,7 @@ const instagramLink = links.find(i => i.name === 'Instagram')
   <div class="my-2 text-center">
     <a
       v-if="instagramLink"
-      :href="instagramLink?.url"
+      :href="instagramLink?.uri"
       target="_blank"
       class="text-slate-400"
     >
