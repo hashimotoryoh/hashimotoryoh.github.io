@@ -1,10 +1,5 @@
 <script setup lang="ts">
 import links from '@/assets/json/links.json'
-import InlineSvg from 'vue-inline-svg'
-
-defineComponent({
-  InlineSvg
-})
 </script>
 
 <template>
