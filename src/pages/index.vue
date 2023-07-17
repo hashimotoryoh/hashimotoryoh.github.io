@@ -16,9 +16,6 @@ import links from '@/assets/json/links.json'
       <h1 class="h1 font-bold text-xl">
         {{ $t('pages.index.fullname') }}
       </h1>
-      <p>
-        {{ $t('pages.index.caption') }}
-      </p>
     </section>
 
     <section class="max-w-screen-md mx-auto px-2">
