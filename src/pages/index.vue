@@ -6,8 +6,8 @@ import links from '@/assets/json/links.json'
   <div class="container mx-auto">
     <section class="mb-8 text-center">
       <img
-        src="/img/profile.jpg"
-        srcset="/img/profile.jpg 1x, /img/profile@2x.jpg 2x, /img/profile@3x.jpg 3x"
+        src="/img/profile.png"
+        srcset="/img/profile.png 1x, /img/profile@2x.png 2x, /img/profile@3x.png 3x"
         :alt="$t('pages.index.fullname')"
         width="96"
         height="96"
