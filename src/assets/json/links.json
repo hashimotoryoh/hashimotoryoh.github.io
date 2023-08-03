@@ -23,5 +23,10 @@
     "fai": "fab fa-line",
     "name": "LINE",
     "uri": "https://line.me/ti/p/JAuaf2taOD"
+  },
+  {
+    "fai": "fab fa-whatsapp",
+    "name": "WhatsApp",
+    "uri": "https://wa.me/qr/4ZYLZSWU26XDP1"
   }
 ]
