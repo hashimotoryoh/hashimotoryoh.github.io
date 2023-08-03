@@ -12,6 +12,12 @@
     "uri": "https://www.instagram.com/hashimotoryoh"
   },
   {
+    "fai": "fab fa-threads",
+    "id": 6,
+    "name": "Threads",
+    "uri": "https://www.threads.net/@hashimotoryoh"
+  },
+  {
     "fai": "fab fa-twitter",
     "id": 5,
     "name": "Twitter",
