@@ -28,11 +28,5 @@
     "id": 4,
     "name": "LINE",
     "uri": "https://line.me/ti/p/JAuaf2taOD"
-  },
-  {
-    "fai": "fab fa-github",
-    "id": 5,
-    "name": "GitHub",
-    "uri": "https://github.com/hashimotoryoh"
   }
 ]
