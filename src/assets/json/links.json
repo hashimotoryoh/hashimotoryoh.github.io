@@ -1,31 +1,26 @@
 [
   {
     "fai": "fab fa-facebook",
-    "id": 1,
     "name": "Facebook",
     "uri": "https://www.facebook.com/ryoh.hashimoto"
   },
   {
     "fai": "fab fa-instagram",
-    "id": 2,
     "name": "Instagram",
     "uri": "https://www.instagram.com/hashimotoryoh"
   },
   {
     "fai": "fab fa-threads",
-    "id": 6,
     "name": "Threads",
     "uri": "https://www.threads.net/@hashimotoryoh"
   },
   {
     "fai": "fab fa-twitter",
-    "id": 3,
     "name": "Twitter",
     "uri": "https://twitter.com/hashimotoryoh"
   },
   {
     "fai": "fab fa-line",
-    "id": 4,
     "name": "LINE",
     "uri": "https://line.me/ti/p/JAuaf2taOD"
   }

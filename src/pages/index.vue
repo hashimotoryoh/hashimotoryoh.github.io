@@ -22,7 +22,7 @@ import links from '@/assets/json/links.json'
       <ul class="flex flex-wrap space-y-4">
         <li
           v-for="link in links"
-          :key="link.id"
+          :key="link.name"
           class="w-full"
         >
           <a
