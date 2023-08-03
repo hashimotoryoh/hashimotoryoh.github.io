@@ -17,6 +17,7 @@ import {
   faLine,
   faThreads,
   faTwitter,
+  faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
@@ -37,6 +38,7 @@ library.add(
   faLine,
   faThreads,
   faTwitter,
+  faWhatsapp,
 )
 
 const faComponentName = 'fai'
