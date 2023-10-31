@@ -18,7 +18,6 @@ components:
     share_this_page: "이 페이지 공유"
 pages:
   index:
-    caption: "밴쿠버에 있습니다. 🇨🇦"
     fullname: "Ryoh Hashimoto"
     see_more: "더보기..."
 Facebook: "Facebook"
