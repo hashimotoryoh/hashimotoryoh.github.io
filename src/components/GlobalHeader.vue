@@ -19,16 +19,19 @@ function copyURL() {
   }, 3000);
 }
 
-const esc = (event: KeyboardEvent) => {
+const closeModals = (event: KeyboardEvent) => {
   if (event.key === 'Escape') {
     localeMenuVisible.value = false
     shareMenuVisible.value = false
-    console.log('hoge')
   }
 }
 
 onMounted(() => {
-  addEventListener(EventType.KeyDown, esc)
+  addEventListener(EventType.KeyDown, closeModals)
+})
+
+onUnmounted(() => {
+  removeEventListener(EventType.KeyDown, closeModals)
 })
 </script>
 
