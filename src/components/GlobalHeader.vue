@@ -9,12 +9,12 @@ const { switchLocale } = useLocale()
 const localeMenuVisible = ref<boolean>(false)
 const shareMenuVisible = ref<boolean>(false)
 
-const messageForCopy = ref<string>('Copy')
+const isCopied = ref<boolean>(false)
 function copyURL() {
   navigator.clipboard.writeText(config.app.base_url)
-  messageForCopy.value = 'Copied'
+  isCopied.value = true
   setTimeout(() => {
-    messageForCopy.value = 'Copy'
+    isCopied.value = false
   }, 3000);
 }
 </script>
@@ -151,7 +151,8 @@ function copyURL() {
             </div>
             <div class="grow-0 px-2">
               <p class="text-center text-green-400 font-bold">
-                {{ messageForCopy }}
+                <span v-if="isCopied">{{ $t('components.GlobalHeader.copied') }}</span>
+                <span v-else>{{ $t('components.GlobalHeader.copy') }}</span>
               </p>
             </div>
           </div>
