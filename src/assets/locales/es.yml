@@ -17,7 +17,6 @@ components:
     share_this_page: "Comparte esta página"
 pages:
   index:
-    caption: "Estoy en Vancouver. 🇨🇦"
     fullname: "Ryoh Hashimoto"
     see_more: "Más información..."
 Facebook: "Facebook"
