@@ -7,20 +7,20 @@ locale:
   ko: "🇰🇷 한국어"
   pt: "🇵🇹 Português"
 global:
-  qr_code: "QR Code"
+  qr_code: "QR 코드"
 components:
   GlobalFooter:
     copyright: "2023 Ryoh Hashimoto"
   GlobalHeader:
-    choose_your_locale: "Choose your locale"
-    copied: "Copied"
-    copy: "Copy"
-    share_this_page: "Share this page"
+    choose_your_locale: "언어 선택"
+    copied: "복사했습니다"
+    copy: "복사"
+    share_this_page: "이 페이지 공유"
 pages:
   index:
-    caption: "I'm in Vancouver. 🇨🇦"
+    caption: "밴쿠버에 있습니다. 🇨🇦"
     fullname: "Ryoh Hashimoto"
-    see_more: "See more..."
+    see_more: "더보기..."
 Facebook: "Facebook"
 Instagram: "Instagram"
 LINE: "LINE"
