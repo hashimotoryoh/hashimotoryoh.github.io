@@ -2,6 +2,7 @@
 import { useDarkMode } from '@/utilities/DarkModeUtil'
 import { useLocale } from '@/utilities/LocaleUtil'
 import config from '@/config'
+import EventType from '@/utilities/EventType'
 
 const { isDarkMode, switchDarkMode } = useDarkMode()
 const { switchLocale } = useLocale()
@@ -17,6 +18,21 @@ function copyURL() {
     isCopied.value = false
   }, 3000);
 }
+
+const closeModals = (event: KeyboardEvent) => {
+  if (event.key === 'Escape') {
+    localeMenuVisible.value = false
+    shareMenuVisible.value = false
+  }
+}
+
+onMounted(() => {
+  addEventListener(EventType.KeyDown, closeModals)
+})
+
+onUnmounted(() => {
+  removeEventListener(EventType.KeyDown, closeModals)
+})
 </script>
 
 <template>
