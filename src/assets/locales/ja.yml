@@ -18,7 +18,6 @@ components:
     share_this_page: "このページを共有"
 pages:
   index:
-    caption: "バンクーバーにいます。🇨🇦"
     fullname: "橋本 龍"
     see_more: "もっとみる..."
 Facebook: "Facebook"
