@@ -4,6 +4,7 @@ locale:
   fr: "🇫🇷 Français"
   it: "🇮🇹 Italiano"
   ja: "🇯🇵 日本語"
+  ko: "🇰🇷 한국어"
   pt: "🇵🇹 Português"
 global:
   qr_code: "Código QR"
